@@ -1,0 +1,94 @@
+
+* {margin:0px;
+    padding:0px;
+}
+
+
+h1{color: white; 
+    background-color: dodgerblue; 
+    height: 50px; 
+    text-align: center;
+    text-decoration-line: underline; 
+    padding-top: 20px;}
+
+
+ #caja_menu {
+    margin:auto;
+    margin: 20px 40px;
+    max-width: 100%;
+    height: 70px;
+  
+}
+
+
+ul, li {
+    list-style:none;
+}
+
+.nav > li{
+    float:left;
+}
+
+.clear{clear: both;}
+
+/* damos estilos a cada elemento) */
+.nav li a {
+    background-color: deepskyblue;
+    color:white;
+    text-decoration:none; /*Quitamos el estilo de los link*/
+    padding:10px 12px;    
+    border: 2px solid white;
+    width: 130px;
+    text-align: center;
+    display:block;
+    font-weight: bold; /*los convertimos en bloques*/
+}
+
+.nav > li > a{margin-right: 20px;} /*damos margin solo a los a que son decendientes de li y .nav*/
+
+/* :hover efecto de cambio de color al pasar el mouse */
+.nav li a:hover {
+    background-color:magenta;
+}
+
+/* Aca ocultamos los Submenu */
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+/*Se mestran los submenu al pasar el mouse*/
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+/* lo ubicamos a la derecha de nuestro menú */
+.nav li ul li ul {
+    right: -156px;
+    top:0px;
+}
+
+p{height: 200px;
+    width:500px;
+    text-align: justify;
+    padding: 20px;
+    border: solid black 3px;
+    margin:10px;
+    display:block;
+    float: left;
+    clear: both;
+    background-color: blanchedalmond;}
+    
+    
+    
+    aside{height: 199px;
+    width: 409px;
+    text-align: center;
+    font-weight: bold;
+    margin:50px;
+    padding: 20px;
+    }
